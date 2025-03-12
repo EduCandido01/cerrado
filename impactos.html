@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impactos da Degradação do Cerrado</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1QSyHT19e1-dn9UU0NQ0e2xOz629ptDb4U9s-to9gHzG4OjUmFsJIvdclyWxtfS2-sEE&usqp=CAU">
+    <style>
+        /* Reset de estilos */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Corpo */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #2e6f58;
+            color: white;
+            padding: 20px 0;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        /* Seções */
+        .section {
+            padding: 40px 20px;
+            background-color: white;
+        }
+
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .impactos-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .impacto {
+            flex: 1 1 45%;
+            background-color: #e2e2e2;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .impacto img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .impacto h3 {
+            font-size: 1.6rem;
+            margin-top: 10px;
+            color: #2e6f58;
+        }
+
+        .impacto p {
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+
+        .video-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            max-width: 800px;
+            height: 450px;
+            border-radius: 10px;
+        }
+
+        /* Formatação para a tela pequena */
+        @media screen and (max-width: 768px) {
+            header .container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            header nav ul {
+                flex-direction: column;
+                padding: 0;
+            }
+
+            header nav ul li {
+                margin: 10px 0;
+            }
+
+            .impactos-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .impacto {
+                flex: 1 1 90%;
+                margin-bottom: 20px;
+            }
+
+            .section h2 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Impactos da Degradação do Cerrado</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">O que é o Cerrado?</a></li>
+                    <li><a href="causas-degradacao.html">Causas da Degradação</a></li>
+                    <li><a href="impactos.html">Impactos</a></li>
+                    <li><a href="help.html">Como Ajudar?</a></li>
+                    <li><a href="grafico.html">Gráficos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="impactos" class="section">
+        <div class="container">
+            <h2>Impactos da Degradação do Cerrado</h2>
+
+            <div class="impactos-container">
+                <!-- Impacto 1 - Perda de Biodiversidade -->
+                <div class="impacto">
+                    <img src="https://projetocolabora.com.br/wp-content/uploads/2022/12/20220303wwftatu-bola-adriano-gambarini-511x262.jpg" alt="Perda de Biodiversidade no Cerrado">
+                    <h3>Perda de Biodiversidade</h3>
+                    <p>A degradação do Cerrado leva à extinção de muitas espécies endêmicas e ao enfraquecimento de ecossistemas essenciais para o equilíbrio ambiental. O Cerrado é lar para uma grande diversidade de flora e fauna que estão sendo comprometidas.</p>
+                </div>
+
+                <!-- Impacto 2 - Alterações Climáticas -->
+                <div class="impacto">
+                    <img src="https://revistapesquisa.fapesp.br/wp-content/uploads/2021/10/052-057_cerrado_309-0-1140.jpg" alt="Alterações Climáticas no Cerrado">
+                    <h3>Alterações Climáticas</h3>
+                    <p>O desmatamento e a degradação do Cerrado contribuem para o aumento das emissões de gases de efeito estufa, agravando as mudanças climáticas. Isso resulta em padrões climáticos erráticos, como seca prolongada e chuvas intensas e imprevisíveis.</p>
+                </div>
+            </div>
+
+            <div class="impactos-container">
+                <!-- Impacto 3 - Perda de Recursos Hídricos -->
+                <div class="impacto">
+                    <img src="https://conteudo.imguol.com.br/c/noticias/2015/02/09/9fev2015---pequena-poca-surge-na-represa-jaguari-jacarei-na-cidade-de-joanopolis-sp-nesta-segunda-feira-9-mesmo-sem-ter-registrado-chuva-o-nivel-do-sistema-cantareira-principal-manancial-1423494936329_615x300.jpg" alt="Perda de Recursos Hídricos no Cerrado">
+                    <h3>Perda de Recursos Hídricos</h3>
+                    <p>A destruição das matas ciliares e o esgotamento dos solos no Cerrado impactam negativamente os recursos hídricos da região. Isso afeta a qualidade da água e reduz a quantidade de água disponível para consumo humano e agricultura.</p>
+                </div>
+
+                <!-- Impacto 4 - Comprometimento das Comunidades Locais -->
+                <div class="impacto">
+                    <img src="https://images03.brasildefato.com.br/6f204e981d95641012b01dffa62af349.jpeg" alt="Comunidades locais no Cerrado">
+                    <h3>Comprometimento das Comunidades Locais</h3>
+                    <p>A degradação afeta diretamente as comunidades que dependem dos recursos naturais do Cerrado. Indígenas e comunidades tradicionais perdem seus meios de subsistência e enfrentam dificuldades socioeconômicas, como a escassez de alimentos e recursos naturais.</p>
+                </div>
+            </div>
+
+            <!-- Vídeo explicativo -->
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/s6NNvokR1TQ?si=ak_e1zinoBtgmiGY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 O Cerrado Está Morrendo. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

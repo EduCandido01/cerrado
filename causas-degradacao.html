@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Causas da Degradação do Cerrado</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1QSyHT19e1-dn9UU0NQ0e2xOz629ptDb4U9s-to9gHzG4OjUmFsJIvdclyWxtfS2-sEE&usqp=CAU">
+    <style>
+        /* Reset de estilos */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Corpo */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #2e6f58;
+            color: white;
+            padding: 20px 0;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        /* Seções */
+        .section {
+            padding: 40px 20px;
+            background-color: white;
+        }
+
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .causas-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .causa {
+            flex: 1 1 45%;
+            background-color: #e2e2e2;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .causa img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .causa h3 {
+            font-size: 1.6rem;
+            margin-top: 10px;
+            color: #2e6f58;
+        }
+
+        .causa p {
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+
+        .video-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            max-width: 800px;
+            height: 450px;
+            border-radius: 10px;
+        }
+
+        /* Formatação para a tela pequena */
+        @media screen and (max-width: 768px) {
+            header .container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            header nav ul {
+                flex-direction: column;
+                padding: 0;
+            }
+
+            header nav ul li {
+                margin: 10px 0;
+            }
+
+            .causas-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .causa {
+                flex: 1 1 90%;
+                margin-bottom: 20px;
+            }
+
+            .section h2 {
+                font-size: 1.8rem;
+            }
+        }
+        footer {
+            background-color: #2e6f58;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Causas da Degradação do Cerrado</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">O que é o Cerrado?</a></li>
+                    <li><a href="causas-degradacao.html">Causas da Degradação</a></li>
+                    <li><a href="impactos.html">Impactos</a></li>
+                    <li><a href="help.html">Como Ajudar?</a></li>
+                    <li><a href="grafico.html">Gráficos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="causas" class="section">
+        <div class="container">
+            <h2>Causas Principais da Degradação do Cerrado</h2>
+
+            <div class="causas-container">
+                <!-- Causa 1 - Desmatamento -->
+                <div class="causa">
+                    <img src="https://imagens.ebc.com.br/Exjny-DtKra6nDJlB9BPGS5CXTM=/754x0/smart/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2024/02/29/cerrado.jpg?itok=s7oPzwck" alt="Desmatamento no Cerrado">
+                    <h3>Desmatamento</h3>
+                    <p>O desmatamento do Cerrado é uma das principais causas da degradação. A cada ano, grandes áreas são desmatadas para dar espaço para a agricultura e pastagem, impactando diretamente a biodiversidade e o equilíbrio ecológico da região.</p>
+                </div>
+
+                <!-- Causa 2 - Queimadas -->
+                <div class="causa">
+                    <img src="https://img.odcdn.com.br/wp-content/uploads/2024/07/queimada-cerrado-scaled.jpg" alt="Queimadas no Cerrado">
+                    <h3>Queimadas</h3>
+                    <p>As queimadas, muitas vezes utilizadas para a limpeza de áreas agrícolas, causam danos irreparáveis à vegetação do Cerrado. Elas resultam em emissões de gases de efeito estufa e na destruição de habitats de inúmeras espécies.</p>
+                </div>
+            </div>
+
+            <div class="causas-container">
+                <!-- Causa 3 - Agricultura Intensiva -->
+                <div class="causa">
+                    <img src="https://journals.openedition.org/confins/docannexe/file/28286/3613_expansao_do_agronegocio-small500.jpg" alt="Agricultura Intensiva no Cerrado">
+                    <h3>Agricultura Intensiva</h3>
+                    <p>A expansão das lavouras de soja, milho e outras culturas comerciais em larga escala tem levado à destruição do Cerrado. A agricultura intensiva exige o uso de grandes áreas de terra e a aplicação excessiva de agroquímicos, que afetam o solo e a fauna local.</p>
+                </div>
+
+                <!-- Causa 4 - Expansão Urbana -->
+                <div class="causa">
+                    <img src="https://amazonas1.com.br/wp-content/uploads/2018/03/cidadeluzes-posse-manaus-e1522245122458.jpg" alt="Expansão Urbana no Cerrado">
+                    <h3>Expansão Urbana</h3>
+                    <p>A urbanização acelerada nas áreas próximas ao Cerrado tem levado à fragmentação dos ecossistemas. Com isso, há uma diminuição da qualidade ambiental e aumento da pressão sobre os recursos naturais da região.</p>
+                </div>
+            </div>
+
+            <!-- Vídeo explicativo -->
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/L99MykspfZQ?si=Fj945qLqiuFEDx6d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 O Cerrado Está Morrendo. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
